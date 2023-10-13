@@ -1,0 +1,136 @@
+.bg-aqua {
+  background-image: url("../../assets/Union.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 50px 0px;
+  .text {
+    font-family: Filson Pro;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 180%; /* 27px */
+    text-align: center;
+    color: var(--color-title);
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: Filson Pro;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; /* 27px */
+    text-align: center;
+    color: var(--color-title);
+    margin-bottom: 20px;
+  }
+}
+
+.title-new-letter {
+  width: 757px;
+  height: 88px;
+  flex-shrink: 0;
+  margin-top: 265px;
+  h1 {
+    color: var(--color-title);
+    text-align: center;
+
+    /* Desktop/H2-Desktop */
+    font-family: Abhaya Libre;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 61.6px */
+  }
+
+  @media (max-width: 375px) {
+    width: 328px;
+    height: 112px;
+    flex-shrink: 0;
+
+    h1 {
+      color: var(--color-title);
+      text-align: center;
+
+      /* Mobile/H2-Mobile */
+      font-family: Abhaya Libre;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 128%; /* 35.84px */
+    }
+  }
+}
+
+.subtitle-new-letter {
+  width: 440px;
+  margin-top: 62px;
+  h1 {
+    color: var(--color-paragraph);
+    text-align: center;
+    font-family: Filson Pro;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 180%; /* 27px */
+  }
+}
+.container-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+
+  input {
+    width: 360px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid var(--primary-palette-brand-2, #efa693);
+    background: var(--White, #fff);
+  }
+
+  input::placeholder {
+    padding: 24px;
+    width: 94px;
+    color: var(--Gray---Paragraph, #939393);
+    font-family: Filson Pro;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; /* 27px */
+  }
+
+  input[type="text"] {
+    margin-right: 10px;
+  }
+  button {
+    display: flex;
+    padding: 12px 40px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid var(--primary-palette-brand-2, #efa693);
+    opacity: 0.9;
+    background: var(--primary-palette-brand-2, #efa693);
+    color: var(--White, #fff);
+    text-align: center;
+    font-family: Neogrotesk Ess;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170%; /* 23.8px */
+    text-transform: uppercase;
+  }
+}

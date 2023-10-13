@@ -1,0 +1,54 @@
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+module.exports = {
+  entry: path.resolve(__dirname, "..", "./src/index.tsx"),
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(ts|js)x?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "babel-loader",
+          },
+        ],
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff(2)?|ttf|ttf|otf|svg|)$/,
+        type: "asset/inline",
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: "../src/styles/fonts", // Carpeta de destino para las fuentes
+          },
+        },
+      },
+    ],
+  },
+  output: {
+    path: path.resolve(__dirname, "..", "./build"),
+    filename: "bundle.js",
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "..", "./src/index.html"),
+    }),
+  ],
+  devServer: {
+    historyApiFallback: true, // Habilita el enrutamiento de React Router
+  },
+  stats: "errors-only",
+};

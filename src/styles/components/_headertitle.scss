@@ -1,0 +1,22 @@
+.header-title {
+  padding-left: 216px !important;
+  margin-top: 36px;
+  &.title {
+    h2 {
+      color: var(--color-title);
+
+      /* Desktop/H2-Desktop */
+      font-family: Abhaya Libre;
+      font-size: 44px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 61.6px */
+    }
+
+    &.img {
+      position: absolute;
+      z-index: -1;
+      margin-left: -240px;
+    }
+  }
+}

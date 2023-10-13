@@ -1,0 +1,40 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "Product Product Product Product";
+}
+
+.container-product-all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    font-family: Abhaya Libre;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 61.6px */
+    color: var(--color-title);
+    text-align: center;
+  }
+  img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+
+    @media (max-width: 375px) {
+      width: 100px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: transform 0.5s ease;
+    }
+  }
+}
