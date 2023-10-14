@@ -2,7 +2,13 @@
   background-image: url("../../assets/Union.png");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 300px;
+  height: 616px;
+  @media (max-width: 375px) {
+    background-image: url("../../assets/Union-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+  }
 }
 
 .content {
@@ -38,8 +44,7 @@
 .title-new-letter {
   width: 757px;
   height: 88px;
-  flex-shrink: 0;
-  margin-top: 265px;
+  margin-top: 186px;
   h1 {
     color: var(--color-title);
     text-align: center;
@@ -55,9 +60,12 @@
   @media (max-width: 375px) {
     width: 328px;
     height: 112px;
-    flex-shrink: 0;
+    margin-top: 75px;
 
     h1 {
+      width: 328px;
+      height: 112px;
+
       color: var(--color-title);
       text-align: center;
 
@@ -72,7 +80,7 @@
 }
 
 .subtitle-new-letter {
-  width: 440px;
+  width: 435px;
   margin-top: 62px;
   h1 {
     color: var(--color-paragraph);
@@ -82,6 +90,20 @@
     font-style: normal;
     font-weight: 350;
     line-height: 180%; /* 27px */
+  }
+
+  @media (max-width: 375px) {
+    width: 235px;
+    margin-top: 62px;
+    h1 {
+      color: var(--Gray---Paragraph, #939393);
+      text-align: center;
+      font-family: Filson Pro;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 350;
+      line-height: 180%; /* 27px */
+    }
   }
 }
 .container-input {
@@ -132,5 +154,83 @@
     font-weight: 700;
     line-height: 170%; /* 23.8px */
     text-transform: uppercase;
+    @media screen and (max-width: 375px) {
+      width: 199px;
+      height: 48px;
+      display: flex;
+      padding: 12px 40px;
+      text-align: center;
+      font-family: Neogrotesk Ess;
+      font-size: 14px;
+      font-style: normal;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 28px;
+  }
+}
+
+.img-new-letter {
+  position: absolute;
+  margin-left: 136px;
+  margin-top: 220px;
+
+  @media (max-width: 375px) {
+    position: absolute;
+    margin-left: 22px;
+    margin-top: 71px;
+  }
+}
+
+.img-new-letter2 {
+  position: absolute;
+  margin-left: 282px;
+  margin-top: 257px;
+  @media (max-width: 375px) {
+    position: absolute;
+    margin-left: 153px;
+    margin-top: 93px;
+    width: 40px;
+    height: 40px;
+  }
+}
+.img-new-letter3 {
+  position: absolute;
+  margin-left: 73px;
+  margin-top: 350px;
+  @media (max-width: 375px) {
+    position: absolute;
+    margin-left: -23px;
+    margin-top: 164px;
+  }
+}
+.img-new-letter4 {
+  position: absolute;
+  left: 1262px;
+  top: 1405px;
+  @media (max-width: 375px) {
+    left: 279px;
+    width: 72px;
+    height: 83px;
+    top: 1322px;
+  }
+}
+
+.img-new-letter5 {
+  position: absolute;
+  left: 1194px;
+  margin-top: 395px;
+  @media (max-width: 375px) {
+    top: 1060px;
+    left: 251px;
+    width: 35px;
+    height: 35px;
   }
 }

@@ -24,4 +24,33 @@
       }
     }
   }
+
+  @media screen and (max-width: 375px) and (max-width: 420px) {
+    &.bg-pink {
+      background-color: var(--color-pink);
+      height: 32px;
+
+      .title {
+        text-align: center;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        width: 318px;
+
+        h2 {
+          font-family: Abhaya Libre;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 700;
+          letter-spacing: 0.26px;
+          text-transform: uppercase;
+          height: 100%;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }

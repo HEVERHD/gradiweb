@@ -20,12 +20,37 @@
     h1 {
       color: var(--White, #fff);
       text-align: center;
-      font-family: Neogrotesk Ess;
       font-size: 14px;
       font-style: normal;
       font-weight: 700;
       line-height: 170%; /* 23.8px */
       text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 375px) {
+      &.main {
+        display: flex;
+        padding: 12px 32px;
+        align-items: center;
+        gap: 8px;
+        border-radius: 100px;
+        border: 1px solid var(--primary-palette-brand-2, #efa693);
+        opacity: 0.9;
+        background: var(--primary-palette-brand-2, #efa693);
+        width: 237px;
+        height: 48px;
+
+        h1 {
+          color: var(--White, #fff);
+          text-align: center;
+
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 170%; /* 23.8px */
+          text-transform: uppercase;
+        }
+      }
     }
   }
 

@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "../styles/components/_newletter.scss";
 import Swal from "sweetalert2";
+import pastGreen from "../assets/pastillaverde1.png";
+import pastPink from "../assets/pastlla41.png";
+import pastGray from "../assets/pastilla21.png";
+import pastGray2 from "../assets/pastilla61.png";
+import pastBlue from "../assets/pastilla31.png";
 
 export const NewLetter = () => {
   const [email, setEmail] = useState("");
@@ -36,11 +41,15 @@ export const NewLetter = () => {
   };
   return (
     <div className="container-fluid bg-aqua">
+      <img className="img-new-letter" src={pastGreen} alt="icono" />
+      <img className="img-new-letter2" src={pastPink} alt="icono" />
+      <img className="img-new-letter3" src={pastGray} alt="icono" />
+      <img className="img-new-letter4" src={pastGray2} alt="icono" />
+      <img className="img-new-letter5" src={pastBlue} alt="icono" />
+
       <div className="container content">
         <div className="title-new-letter">
-          <h1>
-            Join the green revolution without <br /> commitment
-          </h1>
+          <h1>Join the green revolution without commitment</h1>
         </div>
         <div className="subtitle-new-letter">
           <h1>

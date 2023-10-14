@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/components/_ProductSlider.scss";
-import { getProductAll } from "../../services/productsAll";
+
 import { Product } from "../../models/useProducts";
 import ProductCard from "./ProductCard";
 import SliderControls from "./SliderControls";
+import { Loader } from "../Loader";
+import { getProductAll } from "../../services/getProducts";
 
 const ProductSlider = () => {
   const [scrollX, setScrollX] = useState(0);
@@ -14,7 +16,7 @@ const ProductSlider = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const response = await getProductAll();
-      const allProducts = response.data.products.nodes;
+      const allProducts = response?.data?.products.nodes;
       const slicedProducts = allProducts.slice(6, 11);
 
       setProducts(slicedProducts);
@@ -44,7 +46,15 @@ const ProductSlider = () => {
 
       <div className="product-slider-container">
         {isLoading ? (
-          <div className="loader">Cargando...</div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Loader />
+          </div>
         ) : (
           <div
             className="product-slider"

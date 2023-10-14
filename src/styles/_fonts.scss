@@ -21,17 +21,17 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-@font-face {
-  font-family: "Filson Pro";
-  font-style: normal;
-  src: url("./fonts/filo/FilsonPro-Black.woff2") format("woff2");
-  font-weight: 500;
-}
+// @font-face {
+//   font-family: "Filson Pro";
+//   font-style: normal;
+//   font-display: swap;
+//   src: url(https://fuentes-92979.appspot.com/FilsonPro-Regular.woff)
+//     format("woff");
+// }
 
-@font-face {
-  font-family: "Neogrotesk Ess";
-  font-style: normal;
-  src: url("./fonts/neogro/Fontspring-DEMO-neogroteskess-black.otf")
-    format("otf");
-  font-weight: 700;
-}
+// @font-face {
+//   font-family: "Neogrotesk Ess";
+//   font-style: normal;
+//   src: url("./fonts/Fontspring-DEMO-neogroteskessalt-regular.otf") format("otf");
+//   font-display: swap;
+// }

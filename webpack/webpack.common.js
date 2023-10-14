@@ -26,15 +26,16 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.(woff(2)?|ttf|ttf|otf|svg|)$/,
-        type: "asset/inline",
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "[name].[ext]",
-            outputPath: "../src/styles/fonts", // Carpeta de destino para las fuentes
+        test: /\.(woff(2)?|ttf|otf|eot|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts",
+            },
           },
-        },
+        ],
       },
     ],
   },

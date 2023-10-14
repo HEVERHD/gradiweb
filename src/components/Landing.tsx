@@ -1,6 +1,6 @@
 //services
 import { useEffect, useState } from "react";
-import { getProductAll } from "../services/productsAll";
+import { getProductAll } from "../services/getProducts";
 import { Products } from "../models/useProducts";
 
 //styles

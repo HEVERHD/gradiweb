@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getProductAll } from "../services/productsAll";
+import { getProductAll } from "../services/getProducts";
 import { Products } from "../models/useProducts";
 
 export const ProductsAll = () => {
