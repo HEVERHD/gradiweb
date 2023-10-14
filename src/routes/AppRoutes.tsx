@@ -7,8 +7,7 @@ export const AppRoutes = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Navigate to="/landing" />} />
-        <Route path="/landing" element={<Landing />} />
+        <Route path="/" element={<Landing />} />
         <Route path="/all-products" element={<PagesProductAll />} />
       </Routes>
     </>
