@@ -29,6 +29,7 @@
 
     @media screen and (max-width: 375px) {
       &.main {
+        margin-top: -30px;
         display: flex;
         padding: 12px 32px;
         align-items: center;
@@ -38,7 +39,7 @@
         opacity: 0.9;
         background: var(--primary-palette-brand-2, #efa693);
         width: 237px;
-        height: 48px;
+        height: 30px;
 
         h1 {
           color: var(--White, #fff);

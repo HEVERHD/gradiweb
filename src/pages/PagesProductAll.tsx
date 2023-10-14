@@ -1,27 +1,15 @@
-import { useEffect, useState } from "react";
-
-import { Product } from "../models/useProducts";
 import ProductCard from "../components/sliderProduct/ProductCard";
 import { HeaderTop } from "../components/HeaderTop";
 import { NewLetter } from "../components/NewLetter";
-import left from "../assets/leftArr.png";
 
 import "../styles/pages/_pagesProductAll.scss";
 import { Skeleton } from "../components/Skeleton";
-import { getProductAll } from "../services/getProducts";
+import { useProductData } from "../hooks/useProductData";
+import ErrorScreen from "../components/ErrorMessage";
+import ProductList from "../components/ProductList";
 
 export const PagesProductAll = () => {
-  const [products, setProducts] = useState<Product[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const response = await getProductAll();
-      const allProducts = response.data.products.nodes;
-      setProducts(allProducts);
-      setIsLoading(false);
-    };
-    fetchProducts();
-  }, []);
+  const { products, isLoading, error } = useProductData();
 
   const goToBack = () => {
     window.history.back();
@@ -42,32 +30,19 @@ export const PagesProductAll = () => {
             <path
               d="M11 17L6 12M6 12L11 7M6 12L18 12"
               stroke="#111827"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
         <h1>Product All</h1>
       </div>
-      <div className="container products">
-        {isLoading ? (
-          <>
-            <Skeleton />
-            <Skeleton />
-            <Skeleton />
-            <Skeleton />
-            <Skeleton />
-            <Skeleton />
-            <Skeleton />
-            <Skeleton />
-          </>
-        ) : (
-          products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))
-        )}
-      </div>
+      {error ? (
+        <ErrorScreen message="Oops! Something went wrong, try again later." />
+      ) : (
+        <ProductList products={products} isLoading={isLoading} />
+      )}
 
       <NewLetter />
     </>
