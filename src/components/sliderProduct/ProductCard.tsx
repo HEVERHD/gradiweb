@@ -1,5 +1,5 @@
 import { Product } from "../../models/useProducts";
-import ProductReview from "../ProductReview";
+import ProductReview from "./ProductReview";
 
 interface Props {
   product: Product;
