@@ -49,7 +49,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    historyApiFallback: true, // Habilita el enrutamiento de React Router
+    historyApiFallback: true,
   },
   stats: "errors-only",
 };
