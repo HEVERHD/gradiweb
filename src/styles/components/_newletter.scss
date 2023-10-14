@@ -143,7 +143,7 @@
     align-items: center;
     gap: 8px;
     border-radius: 100px;
-    border: 1px solid var(--primary-palette-brand-2, #efa693);
+    border: 1px solid var(--color-text-button);
     opacity: 0.9;
     background: var(--primary-palette-brand-2, #efa693);
     color: var(--White, #fff);
@@ -219,7 +219,7 @@
     left: 279px;
     width: 72px;
     height: 83px;
-    top: 1322px;
+    top: 1080px;
   }
 }
 
@@ -228,7 +228,7 @@
   left: 1194px;
   margin-top: 395px;
   @media (max-width: 375px) {
-    top: 1060px;
+    top: 811px;
     left: 251px;
     width: 35px;
     height: 35px;

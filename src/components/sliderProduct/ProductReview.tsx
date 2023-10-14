@@ -1,4 +1,4 @@
-import start from "../assets/startreview.png";
+import start from "../../assets/startreview.png";
 
 const ProductReview = ({ reviewValue }) => {
   let numberOfStars = 0;
@@ -13,7 +13,12 @@ const ProductReview = ({ reviewValue }) => {
   return (
     <div className="stars-contenedor">
       {Array.from({ length: numberOfStars }).map((_, index) => (
-        <img key={index} src={start} alt="star" />
+        <img
+          className="stars-contenedor_start"
+          key={index}
+          src={start}
+          alt="star"
+        />
       ))}
     </div>
   );

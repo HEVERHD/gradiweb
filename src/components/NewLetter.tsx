@@ -63,7 +63,7 @@ export const NewLetter = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onBlur={validateEmail}
-            style={{ borderColor: isValid ? "initial" : "#efa693" }}
+            style={{ borderColor: isValid ? "#efa693" : "#ffbd68" }}
             placeholder="Your Email"
           />
           <button>SEND</button>
