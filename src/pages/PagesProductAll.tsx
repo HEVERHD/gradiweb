@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import "../styles/pages/_pagesProductAll.scss";
 
 import { useProductData } from "../hooks/useProductData";
@@ -6,17 +5,6 @@ import ErrorScreen from "../components/ErrorMessage";
 import ProductList from "../components/ProductList";
 import { HeaderTop } from "../components/HeaderTop";
 import { NewLetter } from "../components/NewLetter";
-=======
-import ProductCard from "../components/sliderProduct/ProductCard";
-import { HeaderTop } from "../components/HeaderTop";
-import { NewLetter } from "../components/NewLetter";
-
-import "../styles/pages/_pagesProductAll.scss";
-import { Skeleton } from "../components/Skeleton";
-import { useProductData } from "../hooks/useProductData";
-import ErrorScreen from "../components/ErrorMessage";
-import ProductList from "../components/ProductList";
->>>>>>> 55c78440439da9c7683c3bd6b8c112bd36ab9328
 
 export const PagesProductAll = () => {
   const { products, isLoading, error } = useProductData();
@@ -46,10 +34,7 @@ export const PagesProductAll = () => {
             />
           </svg>
         </div>
-<<<<<<< HEAD
-=======
         <h1>Product All</h1>
->>>>>>> 55c78440439da9c7683c3bd6b8c112bd36ab9328
       </div>
       {error ? (
         <ErrorScreen message="Oops! Something went wrong, try again later." />
