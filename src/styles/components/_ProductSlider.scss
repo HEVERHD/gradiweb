@@ -66,6 +66,7 @@
     width: 247px;
     height: 386px;
     margin: 4px;
+    margin-left: 30px;
 
     h3 {
       margin-top: 0;
@@ -235,12 +236,6 @@
     width: 70px;
     height: 24px;
     z-index: 0;
-
-    &:hover {
-      cursor: pointer;
-      transform: scaleX(-1);
-      transition: transform 0.5s ease;
-    }
   }
 
   .left-Arrow {
@@ -251,6 +246,11 @@
     left: -35px;
     top: -3px;
     z-index: 999;
+    &:hover {
+      cursor: pointer;
+      transform: scaleX(-1);
+      transition: transform 0.5s ease;
+    }
   }
 
   .rigth-Arrow {
@@ -262,6 +262,12 @@
     z-index: 999;
     left: 45px;
     top: -3px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scaleX(-1);
+      transition: transform 0.5s ease;
+    }
   }
 
   @media screen and (max-width: 375px) {
@@ -286,6 +292,32 @@
       z-index: 999;
       left: 45px;
       top: -3px;
+    }
+  }
+}
+
+.error-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  p {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-text-button);
+  }
+
+  @media screen and (max-width: 375px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 375;
+    p {
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      color: var(--color-text-button);
     }
   }
 }

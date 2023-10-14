@@ -1,12 +1,6 @@
 import PropTypes from "prop-types";
 
-import React from "react";
-
-type ReusableButtonProps = {
-  onClick: () => void;
-  text: string;
-  style?: React.CSSProperties;
-};
+import ReusableButtonProps from "../types/ReusableButtonProps";
 
 const ReusableButton = ({ onClick, text, style }: ReusableButtonProps) => {
   return (
