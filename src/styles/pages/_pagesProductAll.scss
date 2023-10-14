@@ -63,3 +63,28 @@
     }
   }
 }
+.counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+  h2 {
+    font-family: Abhaya Libre;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    color: var(--color-paragraph);
+    letter-spacing: -0.8px;
+  }
+  span {
+    margin-left: 14px;
+    font-family: Abhaya Libre;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    color: var(--);
+  }
+}

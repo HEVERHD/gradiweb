@@ -321,3 +321,37 @@
     }
   }
 }
+
+.container-discount {
+  display: flex;
+  padding: 4px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: var(--color-discount);
+  position: absolute;
+  width: 59px;
+  height: 28px;
+  margin-left: 215px;
+  margin-top: -339px;
+  p {
+    font-family: "Arial";
+    font-size: 14px;
+    color: var(--Body---Titles, #444950);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140.6%; /* 19.684px */
+  }
+  @media screen and (max-width: 375px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 49px;
+    height: 18px;
+    margin-left: 170px;
+    margin-top: -319px;
+  }
+}

@@ -1,12 +1,10 @@
-import ProductCard from "../components/sliderProduct/ProductCard";
-import { HeaderTop } from "../components/HeaderTop";
-import { NewLetter } from "../components/NewLetter";
-
 import "../styles/pages/_pagesProductAll.scss";
-import { Skeleton } from "../components/Skeleton";
+
 import { useProductData } from "../hooks/useProductData";
 import ErrorScreen from "../components/ErrorMessage";
 import ProductList from "../components/ProductList";
+import { HeaderTop } from "../components/HeaderTop";
+import { NewLetter } from "../components/NewLetter";
 
 export const PagesProductAll = () => {
   const { products, isLoading, error } = useProductData();
