@@ -13,9 +13,12 @@ const ProductCard = ({ product }: PropsProduct) => {
         className="product-image"
         alt={product.title}
       />
+<<<<<<< HEAD
       <div className="container-discount">
         <p>- {product.totalInventory}%</p>
       </div>
+=======
+>>>>>>> 55c78440439da9c7683c3bd6b8c112bd36ab9328
       <div className="container-add">
         <button className="button-card">
           <p>Add to cart</p>
