@@ -73,6 +73,8 @@ npx serve
 
 ### \*\*Link de despliege plataforma vercel https://gradiweb-theta.vercel.app/
 
+### \*\* la landing consta de un slider de 5 productos que vienen directamente de un ENPOINT, lo cual cargan de la manera aleartoia al refrescar la pagina, el boton Browse all products te lleva a la PLP, la seccion de NEWLETTER verifica si el campo digitado es un email valido
+
 ## Arquitectura  (Clean Architecture) basada en La arquitectura limpia
 
 promueve la organización, la legibilidad y la mantenibilidad del código al establecer límites claros entre las diferentes capas de la aplicación. Esto facilita la evolución de la aplicación a lo largo del tiempo y su adaptación a nuevas tecnologías o cambios en los requisitos
