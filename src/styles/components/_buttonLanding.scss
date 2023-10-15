@@ -8,6 +8,7 @@
   margin-bottom: 68px;
 
   &.main {
+    text-decoration: none;
     display: flex;
     padding: 12px 32px;
     align-items: center;
@@ -16,6 +17,12 @@
     border: 1px solid var(--primary-palette-brand-2, #efa693);
     opacity: 0.9;
     background: var(--primary-palette-brand-2, #efa693);
+
+    &.main:hover {
+      opacity: 1;
+      transform: translateY(-4px) scaleX(1.05) scaleY(1.05);
+      transition: all 0.2s ease-in-out;
+    }
 
     h1 {
       color: var(--White, #fff);

@@ -39,7 +39,9 @@ export const PagesProductAll = () => {
       {error ? (
         <ErrorScreen message="Oops! Something went wrong, try again later." />
       ) : (
-        <ProductList products={products} isLoading={isLoading} />
+        <div className="product-all">
+          <ProductList products={products} isLoading={isLoading} />
+        </div>
       )}
 
       <NewLetter />
