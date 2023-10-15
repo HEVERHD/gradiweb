@@ -11,7 +11,9 @@ export function useProductDataDetail() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
+
         const response = await getProductAll();
+
         const allProducts = response?.data?.products.nodes;
         const adaptedProducts = allProducts.map(adaptProduct);
         setProducts(adaptedProducts);
