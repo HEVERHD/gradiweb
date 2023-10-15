@@ -1,7 +1,18 @@
+import { useEffect } from "react";
 import PropsProduct from "../../interfaces/product";
 import ProductReview from "./ProductReview";
 
 const ProductCard = ({ product }: PropsProduct) => {
+  useEffect(() => {
+    const images = document.querySelectorAll(".product-card img");
+    images.forEach((image) => {
+      image.addEventListener("load", () => {
+        if (image.clientHeight === 398) {
+          image.style.marginTop = "80px";
+        }
+      });
+    });
+  }, []);
   return (
     <div className="product-card">
       <img
