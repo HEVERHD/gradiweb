@@ -69,7 +69,7 @@ npx serve
 
 ### \*_Pantalla inicial de la App_ y estamos listo para navegar en ella
 
-<img src="https://raw.githubusercontent.com/HEVERHD/todoServy/main/Screenshot_1695011168.png" alt="Texto alternativo" width="300">
+<img src="https://raw.githubusercontent.com/HEVERHD/gradiweb/main/Escritorio-PC-1380x720.png" alt="Texto alternativo" width="300">
 
 ### \*\*Link de despliege plataforma vercel
 
