@@ -26,7 +26,6 @@ const ProductDetail = () => {
       <p>Nombre del producto: {selectedProduct.name}</p>
       <p>Descripción: {selectedProduct.description}</p>
       <p>Precio: {selectedProduct.price}</p>
-      {/* Otros detalles del producto */}
     </div>
   );
 };
