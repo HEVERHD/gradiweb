@@ -18,8 +18,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "sass": "^1.69.3",
-    "sweetalert2": "^11.7.32",
-    "swiper": "^10.3.1"
+    "sweetalert2": "^11.7.32"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",

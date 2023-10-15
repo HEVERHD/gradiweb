@@ -30,7 +30,6 @@ export function useProductDataCarousel() {
   return { products, isLoading, error };
 }
 
-// Función para seleccionar productos aleatorios
 function selectRandomProducts(products, numProducts) {
   if (products.length <= numProducts) {
     return products;
