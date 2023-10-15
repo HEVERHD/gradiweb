@@ -71,10 +71,8 @@ npx serve
 
 <img src="https://raw.githubusercontent.com/HEVERHD/gradiweb/main/Escritorio-PC-1380x720.png" alt="Texto alternativo" width="300">
 
-### \*\*Link de despliege plataforma vercel
+### \*\*Link de despliege plataforma vercel https://gradiweb-theta.vercel.app/
 
-https://expo.dev/accounts/heverdj72/projects/todo-app-servy/builds/b1c660d6-a31f-4c12-b75b-a78076cda61b
-
-## Arquitectura basada en La arquitectura limpia (Clean Architecture)
+## Arquitectura  (Clean Architecture) basada en La arquitectura limpia
 
 promueve la organización, la legibilidad y la mantenibilidad del código al establecer límites claros entre las diferentes capas de la aplicación. Esto facilita la evolución de la aplicación a lo largo del tiempo y su adaptación a nuevas tecnologías o cambios en los requisitos
