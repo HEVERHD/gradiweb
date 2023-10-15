@@ -83,7 +83,7 @@
     }
   }
 
-  @media screen and (min-width: 461px) and (max-width: 768px) {
+  @media screen and (min-width: 360px) and (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -371,7 +371,6 @@
   }
 
   @media screen and (min-width: 360px) and (max-width: 767px) {
-
     display: flex;
     flex-direction: row;
     align-items: center;

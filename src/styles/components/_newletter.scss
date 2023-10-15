@@ -216,10 +216,15 @@
   margin-left: 1117px;
   margin-top: 257px;
   @media screen and (min-width: 360px) and (max-width: 767px) {
-    margin-left: 346px;
+    margin-left: 304px;
     width: 72px;
     height: 83px;
     margin-top: 223px;
+  }
+  @media (min-width: 1433px) {
+    position: absolute;
+    margin-left: 1317px;
+    margin-top: 257px;
   }
 }
 
@@ -229,8 +234,11 @@
   margin-top: 395px;
   @media screen and (min-width: 360px) and (max-width: 767px) {
     margin-top: 342px;
-    margin-left: 361px;
+    margin-left: 260px;
     width: 35px;
     height: 35px;
+  }
+  @media (min-width: 1433px) {
+    margin-left: 1219px;
   }
 }
