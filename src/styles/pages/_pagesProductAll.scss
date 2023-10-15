@@ -4,10 +4,13 @@
   grid-template-rows: 1fr;
   gap: 0px 0px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 360px) and (max-width: 767px) {
+  }
+
+  @media screen and (min-width: 461px) and (max-width: 768px) {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 4fr;
+    grid-template-rows: 4fr;
     gap: 0px 0px;
     grid-template-areas: "Product";
     width: 100%;
@@ -19,6 +22,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
   h1 {
     font-family: Abhaya Libre;
     font-size: 44px;
@@ -46,7 +50,7 @@
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (min-width: 360px) and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,4 +91,32 @@
     line-height: 140%; /* 33.6px */
     color: var(--);
   }
+
+
+  @media screen and (min-width: 412px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    h2 {
+      font-family: Abhaya Libre;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 33.6px */
+      color: var(--color-paragraph);
+      letter-spacing: -0.8px;
+    }
+    span {
+      margin-left: 14px;
+      font-family: Abhaya Libre;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 33.6px */
+      color: var(--);
+    }
+  }
+
 }
