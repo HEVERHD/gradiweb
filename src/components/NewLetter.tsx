@@ -51,10 +51,10 @@ export const NewLetter = () => {
           <h1>Join the green revolution without commitment</h1>
         </div>
         <div className="subtitle-new-letter">
-          <h1>
+          <p>
             If you are missing something and don't want to miss future
-            <br /> promotions or our future products
-          </h1>
+            promotions or our future products
+          </p>
         </div>
         <div className="container-input">
           <input
