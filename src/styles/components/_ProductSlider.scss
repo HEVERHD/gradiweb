@@ -61,10 +61,11 @@
 
   h3 {
     margin-top: 3px;
-    color: var(--Body---Titles, #444950);
+    color: var(--color-title);
+    font-family: Filson Pro;
     font-size: 18px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 132%; /* 23.76px */
     width: 100%;
   }
@@ -138,6 +139,7 @@
     color: var(--color-text-button);
     text-align: center;
     font-size: 14px;
+    font-family: Neogrotesk Ess;
     font-style: normal;
     font-weight: 700;
     line-height: 170%; /* 23.8px */
@@ -206,6 +208,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 19.6px */
+    color: var(--color-paragraph);
   }
   @media screen and (min-width: 360px) and (max-width: 767px) {
     height: 10px;
@@ -224,6 +227,7 @@
 
   p {
     color: var(--Body---Titles, #444950);
+    font-family: Filson Pro;
     text-align: right;
     font-size: 15px;
     font-style: normal;
@@ -235,8 +239,8 @@
     color: var(--Gray---Paragraph, #939393);
     text-align: right;
     font-size: 15px;
+    font-family: Filson Pro;
     font-style: normal;
-    font-weight: 350;
     line-height: 180%; /* 27px */
     text-decoration: line-through;
   }
@@ -428,7 +432,7 @@
     align-items: center;
     width: 49px;
     height: 18px;
-    margin-left: 170px;
-    margin-top: -319px;
+    margin-left: 157px;
+    margin-top: -303px;
   }
 }

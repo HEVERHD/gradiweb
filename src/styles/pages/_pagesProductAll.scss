@@ -12,7 +12,7 @@
     grid-template-areas: "Product";
     width: 100%;
 
-    margin-left: 100px;
+    margin-left: 66px !important;
   }
 
   @media screen and (min-width: 767px) and (max-width: 1200px) {
@@ -124,5 +124,18 @@
       line-height: 140%; /* 33.6px */
       color: var(--);
     }
+  }
+}
+.product-all-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 360px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 }
